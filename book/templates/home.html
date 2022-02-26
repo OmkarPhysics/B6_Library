@@ -1,0 +1,191 @@
+<!-- <h1>Hi..Omkar How are you..!</h1> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome to Python</title>
+    </head>
+<body>
+
+    <h1>My First Heading</h1>
+    <p>My first paragraph.</p>
+
+</body>
+</html> -->
+<!-- #################################################### -->
+
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome to Python developer</title>
+    </head>
+<body> -->
+
+    <!-- <h1>welcome to Python</h1>
+    <h2>welcome to developer</h2>           
+    <h3>welcome to Django</h3>          HTML headings. -->
+
+    <!-- <a href="https://www.w3schools.com">This is a link</a>     # HTML link. -->
+
+
+    <!-- <p>I will become a <br> Python developer.</p>    # Used for line breaking -->
+
+    <!-- <p style="color:rgb(199, 23, 23);">Welcome to Python developer.</p>   # Used for colored paragraph -->
+
+<!-- 
+</body>
+</html> -->
+
+
+
+<!-- <html>
+<body style="background-color:rgb(188, 226, 19);">
+
+    <h1 style="color:rgb(235, 5, 5);">I will become a python developer</h1>
+
+</body>
+</html> -->
+<!-- #################################################### -->
+
+<html>
+    <head>
+        <title> Welcome to Django</title>
+    </head>
+<body>
+<h2>Book Form</h2>
+<hr>                                  
+
+<form action="{% url 'homepage' %}" method="post">
+    {% csrf_token %}
+
+    {% if single_book %}
+        Book ID:-<input type="number" name="bid" value="{{single_book.id}}" readonly><br><br>
+    {% endif %}
+    Book Name:-<input type="text" name="bname" value="{{single_book.name}}" placeholder="Enter Book Name"><br><br>
+    Book Price:-<input type="number" name="bprice" value="{{single_book.price}}" placeholder="Enter Book Price"><br><br>
+    Book Qty:-<input type="number" name="bqty" value="{{single_book.qty}}" placeholder="Enter Book Qty"><br><br>
+
+    <input type="submit" value="Submit" class="btn btn-success">
+
+    {% comment %} <a href="{% url 'Delete_all_books'%}" class="btn btn-primary"> Delete All</a> {% endcomment %} 
+
+
+</form>
+<br>
+
+<div class="btn-group-lg" role="group" aria-label=".....">
+
+    <form action = "{% url 'show_all_books'%}" method="post">
+        {% csrf_token %}
+        <input type = "submit" value="Show all Books" class="btn btn-info">
+    </form>
+
+
+    <form action = "{% url 'Delete_all_books'%}" method="post">
+       {% csrf_token %}
+      <input type = "submit" value="Delete All" class="btn btn-danger">
+    </form>
+
+
+    <form action = "{% url 'soft_delete' %}" method="post">
+         {% csrf_token %}
+         <input type = "submit" value="soft delete" class="btn btn-warning">
+    </form>
+
+
+</div>
+
+{% comment %} <a href="{% url 'show_all_books' %}" class="btn btn-outline-primary">show Books</a> {% endcomment %} 
+{% comment %} <a href="{% url 'soft_delete' %}">Soft Delete</a> {% endcomment %} 
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
