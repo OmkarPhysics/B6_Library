@@ -44,3 +44,10 @@ class Employee(models.Model):
 
     def __str__(self):
         return f"{self.first_name}" 
+
+
+class ProductVideo(models.Model):
+    Video = models.CharField(max_length=30)  
+
+    class Meta:
+        db_table = "videos"

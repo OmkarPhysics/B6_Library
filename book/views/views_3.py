@@ -281,7 +281,9 @@ class EmployeeDelete(DeleteView):
 
 
 
-
+def product_video(request):
+    print("product_video")
+    return HttpResponse("Video")
 
 
 
